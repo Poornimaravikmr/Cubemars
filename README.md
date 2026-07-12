@@ -7,14 +7,15 @@ This repository contains Arduino examples for controlling Cubemars AK Series mot
 ### Cubemars_PC
 Independent position control of two Cubemars motors.
 
-### Cubemars_PC_Time
+### Sine_spd
+Generates sinusoidal position trajectories with velocity and acceleration feedforward.
+
+### Cubemars_PC_t
 Time-based position control.
 
-### Sinusoidal_Position_Control
+### mcp2551_sine
 Generates sinusoidal position trajectories for both motors.
 
-### Sinusoidal_Position_Velocity_Control
-Generates sinusoidal position trajectories with velocity and acceleration feedforward.
 
 ## Hardware
 
