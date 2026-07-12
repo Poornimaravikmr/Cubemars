@@ -23,6 +23,28 @@ Generates sinusoidal position trajectories for both motors.
 - MCP2551 CAN Transceiver
 - Cubemars AK Series Motors
 
+## 🔌 Teensy 4.1 ↔ MCP2551 Connections
+
+| Teensy 4.1 Pin | MCP2551 Pin | Description |
+|---------------|-------------|-------------|
+| Pin 22 (CAN1_TX) | TXD | CAN transmit |
+| Pin 23 (CAN1_RX) | RXD | CAN receive |
+| 5V | VCC | Power supply |
+| GND | GND | Common ground |
+| GND (or 10 kΩ to GND) | RS | High-speed mode / slope control |
+
+---
+
+## 🔌 MCP2551 ↔ Cubemars Motor Connections
+
+| MCP2551 Pin | Motor Connection |
+|-------------|------------------|
+| CANH | CANH |
+| CANL | CANL |
+| GND | Common Ground |
+
+---
+
 ## Software
 
 - Arduino IDE
