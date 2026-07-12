@@ -48,6 +48,12 @@ Generates sinusoidal position trajectories for both motors.
 
 - Arduino IDE
 
+## ⚠️ Notes
+
+- Configure the CAN bus baud rate to **1 Mbps**.
+- Connect **CANH to CANH** and **CANL to CANL** throughout the bus.
+- Place a **120 Ω termination resistor** between **CANH** and **CANL** at each end of the CAN bus.
+- This repository uses the **FlexCAN_T4** library with **CAN1** on the Teensy 4.1.
 
 ## Repository Structure
 
