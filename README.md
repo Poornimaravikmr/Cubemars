@@ -44,6 +44,40 @@ Generates sinusoidal position trajectories for both motors.
 
 ---
 
+## 🔌 CAN Bus Wiring
+
+```text
+                 Teensy 4.1
+             ┌─────────────────┐
+             │                 │
+ CAN1_TX (22)├──────────────┐  │
+ CAN1_RX (23)├────────────┐ │  │
+ 5V──────────┼──────────┐ │ │  │
+ GND─────────┼───────┐  │ │ │  │
+             └───────┼──┼─┼─┘
+                     │  │ │
+              ┌──────▼──▼─▼──────┐
+              │     MCP2551      │
+              │                  │
+              │ TXD  ◄───────────┘
+              │ RXD  ───────────►
+              │ VCC  ◄─────────── 5V
+              │ GND  ◄─────────── GND
+              │ CANH ───────────────┐
+              │ CANL ───────────────┘
+              └─────────────────────┘
+                       │
+                CAN Bus (1 Mbps)
+                       │
+        ┌──────────────┴──────────────┐
+        │                             │
+   Cubemars Motor 1             Cubemars Motor 2
+      CANH  ◄────────────────────► CANH
+      CANL  ◄────────────────────► CANL
+```
+
+---
+
 ## Software
 
 - Arduino IDE
