@@ -55,16 +55,6 @@ Generates sinusoidal position trajectories for both motors.
 - Place a **120 Ω termination resistor** between **CANH** and **CANL** at each end of the CAN bus.
 - This repository uses the **FlexCAN_T4** library with **CAN1** on the Teensy 4.1.
 
-## Repository Structure
-
-```text
-Cubemars/
-├── Cubemars_PC/
-├── Sine_spd/
-├── Cubemars_PC_t/
-├── MCP2551_sine/
-└── Documentation/
-```
 
 ## Author
 
